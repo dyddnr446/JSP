@@ -1,4 +1,4 @@
-package Yonguk.Yonguk;
+package Yonguk.Yonguk.exrate;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

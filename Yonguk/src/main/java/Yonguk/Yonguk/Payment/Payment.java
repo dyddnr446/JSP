@@ -1,4 +1,4 @@
-package Yonguk.Yonguk;
+package Yonguk.Yonguk.Payment;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
