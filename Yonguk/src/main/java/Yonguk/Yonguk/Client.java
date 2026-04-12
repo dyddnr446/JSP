@@ -7,11 +7,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import java.io.IOException;
 import java.math.BigDecimal;
-import java.util.concurrent.TimeUnit;
 
 public class Client {
 public static void main(String[] args) throws IOException, InterruptedException {
-    BeanFactory beanFactory = new AnnotationConfigApplicationContext(ObjectFactory.class);
+    BeanFactory beanFactory = new AnnotationConfigApplicationContext(PaymentConfig.class);
     PaymentService paymentservice = beanFactory.getBean(PaymentService.class);
 
     Payment payment = paymentservice.prepare(100L, "USD", BigDecimal.valueOf(50.7));
