@@ -33,6 +33,8 @@ class PaymentServiceTest {
         this.clock = Clock.fixed(Instant.now(), ZoneId.systemDefault());
     }
 
+
+
     @Test
     @DisplayName("prepare 메소드 요구사항 3가지를 잘 충족했는지 검증")
     void convertedAmount() throws IOException {
